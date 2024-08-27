@@ -1,0 +1,200 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <div class="navbar">
+        <h1>Grocery Store</h1>
+        <ul class="navlist">
+            <li><a href="/index">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/categories">CATEGORIES</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="/blog">BLOGS</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+        </ul>
+
+        <!-- navbar icons link start -->
+        <div class="icons">
+            <p><a href="http://google.com"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+
+            </div>
+
+            <p><a href="/contact"><i class="fa-solid fa-user"></i></a></p>
+        </div>
+
+        <!-- navbar icons link end -->
+
+    </div>
+    <!-- Navbar End -->
+
+        <!-- card section start -->
+
+        <h3 style="background-color: black; color: white; margin-top: 20px; ">Our <span class="sty">Products</span></h3>
+        <p
+            style="text-align: center; justify-content: center; font-size: 18px; color: white; padding-bottom: 20px; background-color: black;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint <br>corporis numquam asperiores debitis
+            quibusdam!</p>
+    
+        <div class="card-section">
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-1.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Tamatto</h5>
+                    <button class="btn" data-product-id="1">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-2.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Pineapple</h5>
+                    <button class="btn" data-product-id="2">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-3.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Chilli</h5>
+                    <button class="btn" data-product-id="3">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-4.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Cherry</h5>
+                    <button class="btn" data-product-id="4">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-5.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Cucumber</h5>
+                    <button class="btn" data-product-id="5">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/fruits/pomi.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Pomegranate</h5>
+                    <button class="btn" data-product-id="6">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-7.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Potato</h5>
+                    <button class="btn" data-product-id="7">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/product-8.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Banana</h5>
+                    <button class="btn" data-product-id="8">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/vegitable/onion.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Onion</h5>
+                    <button class="btn" data-product-id="9">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/fruits/watermelon.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>watermelon</h5>
+                    <button class="btn" data-product-id="10">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/vegitable/bittergaurd.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Bitter gourd</h5>
+                    <button class="btn" data-product-id="11">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="{%static '/img/fruits/apple.jpg'%}">
+                </div>
+                <div class="card-txt">
+                    <h5>Apple</h5>
+                    <button class="btn" data-product-id="12">Add to Cart</button>
+                    <button id="btn">Buy Now</button>
+                </div>
+            </div>
+    
+        </div>
+        <!-- card section end -->
+
+         <!-- js -->
+         <script src="{%static '/js/slide.js'%}"></script>
+
+</body>
+</html>    
